@@ -1,9 +1,9 @@
 # backend.tf for us-east-1 
 terraform {
   backend "s3" {
-    bucket  = "as-js-lab-states"
+    bucket  = "tf-state-mawen"
     encrypt = true
     region  = "us-east-1"
-    key     = "acme/us-east-1/network.tfstate"
+    key     = "tf-acme-infra/us-east-1/network.tfstate"
   }
 }

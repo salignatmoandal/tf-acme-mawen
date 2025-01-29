@@ -2,8 +2,8 @@ data "terraform_remote_state" "vpc" {
   backend = "s3"
 
   config = {
-    bucket = "as-js-lab-states"
+    bucket = "tf-state-mawen"
     region = "us-east-1"
-    key    = "acme/us-east-1/network.tfstate"
+    key    = "tf-acme-infra/us-east-1/network.tfstate"
   }
 }
